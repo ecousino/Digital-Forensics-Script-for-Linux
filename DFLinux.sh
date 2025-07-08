@@ -100,6 +100,7 @@ write_output "tune2fs -l $filesystem_name" "root_partition_filesystem_details.tx
 write_output "ifconfig" "network_configuration.txt"
 write_output "ip addr" "ip_address_info.txt"
 write_output "netstat -i" "network_interfaces.txt"
+write_output "netstat -nlptue" "network_connections.txt"
 
 # Installed Programs
 write_output "dpkg -l" "dpkg_installed_packages.txt" # Replaced 'apt' with 'dpkg -l'
